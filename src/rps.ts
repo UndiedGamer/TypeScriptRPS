@@ -26,11 +26,13 @@ function start() {
 					console.log(`You choose Rock and I chose ${botchoice}\nI win!`)
 					scores[botcscore] = botscore += 1
 					console.log(`Your score is ${scores[usercscore]}\nMy score is ${scores[botcscore]}`)
+					ShowLead()
 				}
 				else if (botchoice === 'Scissors') {
 					console.log(`You choose Rock and I chose ${botchoice}\nYou win!`)
 					scores[usercscore] = userscore += 1
 					console.log(`Your score is ${scores[usercscore]}\nMy score is ${scores[botcscore]}`)
+					ShowLead()
 				}
 				else {
 					console.log(`You choose Rock and I chose ${botchoice}\nNo one wins!`)
@@ -42,11 +44,13 @@ function start() {
 					console.log(`You choose Paper and I chose ${botchoice}\nI win!`)
 					scores[botcscore] = botscore += 1
 					console.log(`Your score is ${scores[usercscore]}\nMy score is ${scores[botcscore]}`)
+					ShowLead()
 				}
 				else if (botchoice === 'Rock') {
 					console.log(`You choose Paper and I chose ${botchoice}\nYou win!`)
 					scores[usercscore] = userscore += 1
 					console.log(`Your score is ${scores[usercscore]}\nMy score is ${scores[botcscore]}`)
+					ShowLead()
 				}
 				else {
 					console.log(`You choose Paper and I chose ${botchoice}\nNo one wins!`)
@@ -58,11 +62,13 @@ function start() {
 					console.log(`You choose Scissors and I chose ${botchoice}\nI win!`)
 					scores[botcscore] = botscore += 1
 					console.log(`Your score is ${scores[usercscore]}\nMy score is ${scores[botcscore]}`)
+					ShowLead()
 				}
 				else if (botchoice === 'Paper') {
 					console.log(`You choose Scissors and I chose ${botchoice}\nYou win!`)
 					scores[usercscore] = userscore += 1
 					console.log(`Your score is ${scores[usercscore]}\nMy score is ${scores[botcscore]}`)
+					ShowLead()
 				}
 				else {
 					console.log(`You choose Scissors and I chose ${botchoice}\nNo one wins!`)
