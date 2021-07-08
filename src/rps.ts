@@ -20,52 +20,52 @@ if (scores[usercscore] === undefined) {
 
 function start() {
 		rl.question('Enter your choice: ', (input) => {
-			if (input.toLowerCase() === 'rock') {
+			if (input.toLowerCase() === 'rock' || input.toLowerCase() === 'r') {
 				const botchoice = botchoices[Math.floor(Math.random() * botchoices.length)];
 				if (botchoice === 'Paper') {
-					console.log(`You choose ${input} and I chose ${botchoice}\nI win!`)
+					console.log(`You choose Rock and I chose ${botchoice}\nI win!`)
 					scores[botcscore] = botscore += 1
 					console.log(`Your score is ${scores[usercscore]}\nMy score is ${scores[botcscore]}`)
 				}
 				else if (botchoice === 'Scissors') {
-					console.log(`You choose ${input} and I chose ${botchoice}\nYou win!`)
+					console.log(`You choose Rock and I chose ${botchoice}\nYou win!`)
 					scores[usercscore] = userscore += 1
 					console.log(`Your score is ${scores[usercscore]}\nMy score is ${scores[botcscore]}`)
 				}
 				else {
-					console.log(`You choose ${input} and I chose ${botchoice}\nNo one wins!`)
+					console.log(`You choose Rock and I chose ${botchoice}\nNo one wins!`)
 				}
 			}
-			else if (input.toLowerCase() === 'paper') {
+			else if (input.toLowerCase() === 'paper' || input.toLowerCase() === 'p') {
 				const botchoice = botchoices[Math.floor(Math.random() * botchoices.length)];
 				if (botchoice === 'Scissors') {
-					console.log(`You choose ${input} and I chose ${botchoice}\nI win!`)
+					console.log(`You choose Paper and I chose ${botchoice}\nI win!`)
 					scores[botcscore] = botscore += 1
 					console.log(`Your score is ${scores[usercscore]}\nMy score is ${scores[botcscore]}`)
 				}
 				else if (botchoice === 'Rock') {
-					console.log(`You choose ${input} and I chose ${botchoice}\nYou win!`)
+					console.log(`You choose Paper and I chose ${botchoice}\nYou win!`)
 					scores[usercscore] = userscore += 1
 					console.log(`Your score is ${scores[usercscore]}\nMy score is ${scores[botcscore]}`)
 				}
 				else {
-					console.log(`You choose ${input} and I chose ${botchoice}\nNo one wins!`)
+					console.log(`You choose Paper and I chose ${botchoice}\nNo one wins!`)
 				}
 			}
-			else if (input.toLowerCase() === 'scissors') {
+			else if (input.toLowerCase() === 'scissors' || input.toLowerCase() === 's') {
 				const botchoice = botchoices[Math.floor(Math.random() * botchoices.length)];
 				if (botchoice === 'Rock') {
-					console.log(`You choose ${input} and I chose ${botchoice}\nI win!`)
+					console.log(`You choose Scissors and I chose ${botchoice}\nI win!`)
 					scores[botcscore] = botscore += 1
 					console.log(`Your score is ${scores[usercscore]}\nMy score is ${scores[botcscore]}`)
 				}
 				else if (botchoice === 'Paper') {
-					console.log(`You choose ${input} and I chose ${botchoice}\nYou win!`)
+					console.log(`You choose Scissors and I chose ${botchoice}\nYou win!`)
 					scores[usercscore] = userscore += 1
 					console.log(`Your score is ${scores[usercscore]}\nMy score is ${scores[botcscore]}`)
 				}
 				else {
-					console.log(`You choose ${input} and I chose ${botchoice}\nNo one wins!`)
+					console.log(`You choose Scissors and I chose ${botchoice}\nNo one wins!`)
 				}
 			}
 			else if (input === 'scores') {
