@@ -68,9 +68,6 @@ function start() {
 					console.log(`You choose Scissors and I chose ${botchoice}\nNo one wins!`)
 				}
 			}
-			else if (input === 'scores') {
-				console.log(`Your score is ${scores[usercscore]}\nMy score is ${scores[botcscore]}`)
-			}
 			else {
 				console.log('Not a valid argument!')
 			}
@@ -86,6 +83,17 @@ function replay() {
 			rl.close()
 		}
 	})
+}
+function ShowLead() {
+	if (scores[usercscore] > scores[botcscore]) {
+		console.log(`I am in lead`)
+	}
+	else if (scores[usercscore] < scores[botcscore]) {
+		console.log('You are in lead')
+	}
+	else {
+		console.log('We both have the same score')
+	}
 }
 start()
 rl.on('close', () => {
