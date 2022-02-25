@@ -1,0 +1,2 @@
+## Running
+npx rhoeshambo
